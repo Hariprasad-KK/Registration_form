@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+      integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registration form</title>
+  </head>
+  <body>
+
+    <h2 class="title">Registration Form</h2>
+      <form>
+        <div class="form-control">
+          <input type="text" name="" id="username" class="username" placeholder="Name">
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <div class="gender-container">
+            <label for="" class="gender-label">Gender: </label>
+            <div class="male-container">
+              <label for="male">Male</label>
+              <input type="radio" name="gender" id="male" class="male">
+            </div>
+
+            <div class="female-container">
+              <label for="female">Female</label>
+              <input type="radio" name="gender" id="female" class="female">
+            </div>
+
+            <div class="other-container">
+              <label for="other">Other</label>
+              <input type="radio" name="gender" id="other" class="other">
+            </div>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <input type="text" name="" id="college" class="college" placeholder="College">
+          <small>Error</small>
+        </div>
+
+        <div class="form-control">
+          <input type="email" name="" id="email" class="email" placeholder="Email">
+          <small>Error</small>
+        </div>
+
+        <div class="form-control">
+          <input type="number" name="" id="number" class="number" placeholder="Number">
+          <small>Error</small>
+        </div>
+
+        <div class="form-control">
+          <select class="programe" name="programe">
+            <option value="programe">Programe</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="EEE">EEE</option>
+            <option value="MEC">MEC</option>
+          </select>
+        </div>
+
+        <button class="register">Register</button>
+      </form>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #eee;
+  --secondary: #333;
+  --boxshadow: rgba(0,0,0,.1);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  background: var(--primary);
+}
+
+
+.title {
+  margin-bottom: 20px;
+  font-size: 30px;
+  color: purple;
+  opacity: 0.6;
+}
+
+form {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: var(--boxshadow);
+  width: 350px;
+}
+
+form input[type=text],form input[type=email], form input[type=number], select{
+  padding: 8px 10px;
+  border: 2px solid var(--secondary);
+  border-radius: 3px;
+  outline: none;
+  width: 100%;
+}
+
+form input, select {
+  margin-top: 10px;
+}
+
+.gender-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.gender-label {
+  margin-top: 6px;
+}
+
+.register {
+  background: purple;
+  color: var(--primary);
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  box-shadow: var(--boxshadow);
+  cursor: pointer;
+}
+
+label {
+  cursor: pointer;
+}
+
+small {
+  color: red;
+  font-weight: bold;
+  display: none;
+  pointer-events: none;
+}
+
+.form-control.error small {
+  display: block;
+  pointer-events: all;
+}
